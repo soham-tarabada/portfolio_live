@@ -51,4 +51,8 @@ frontend/
 2. **About**: Details about education, skills, and internships.
 3. **Projects**: Grid of projects with descriptions and videos.
 4. **Contact**: Contact form with email integration.
+<<<<<<< HEAD
 5. **Resume**: Placeholder for the resume page.
+=======
+5. **Resume**: Placeholder for the resume page.
+>>>>>>> 52b45296c1a3a8325a0735fdd5a91613534c8651
