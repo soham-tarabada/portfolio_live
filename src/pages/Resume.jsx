@@ -6,14 +6,15 @@ const Resume = () => {
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
 
       <div className="border mt-5 shadow-md p-2 w-full max-w-4xl">
-        <iframe
-          src={ResumePdf}
-          className="border w-full h-[80vh] md:h-[600px]"
-          title="My Resume"
-        ></iframe>
+        <object
+            type="application/pdf"
+            data={ResumePdf}
+            className="w-full h-[90vh] md:h-[600px]"
+            title="My Resume"
+        ></object>
       </div>
     </div>
   );
 };
 
-export default Resume;
+export default Resume
