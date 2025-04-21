@@ -1,0 +1,42 @@
+@keyframes wobble1 {
+    0%, 100% {
+      transform: translateY(0%) scale(1.5);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-66%) scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes wobble2 {
+    0%, 100% {
+      transform: translateY(0%) scale(1.5);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(66%) scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-wobble1 {
+    animation: wobble1 0.8s infinite ease-in-out;
+  }
+  
+  .animate-wobble2 {
+    animation: wobble2 0.8s infinite ease-in-out;
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 2s linear infinite;
+  }  

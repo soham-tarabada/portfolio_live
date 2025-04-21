@@ -1,5 +1,5 @@
 import React from "react";
-import { GraduationCap, Calendar, Award, Briefcase, Contact } from "lucide-react";
+import { GraduationCap, Calendar, Award, BrainCircuit, BriefcaseBusiness } from "lucide-react";
 import {assets} from '../assets/assets.js'
 
 const educationData = [
@@ -71,11 +71,11 @@ export const About = () => {
       {/* EDUCATION SECTION */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 flex justify-center items-center gap-3 text-[#FFEB00]">
-            <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-[#FFEB00]" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 flex justify-center items-center gap-3 text-[#7aa9a9]">
+            <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-[#7aa9a9]" />
             Education
           </h1>
-          <p className="text-[#1b1c21] bg-[#FFEB00] px-4 py-2 rounded-md text-lg">
+          <p className="text-[#7aa9a9] px-4 py-2 rounded-md text-lg">
             My education has been a journey of self-discovery, growth, and skill development.
           </p>
         </div>
@@ -111,11 +111,11 @@ export const About = () => {
       <hr className="w-full h-1 bg-gray-400 my-12" />
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 flex justify-center items-center gap-3 text-[#FFEB00]">
-            <Briefcase className="w-8 h-8 md:w-10 md:h-10 text-[#FFEB00]" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 flex justify-center items-center gap-3 text-[#7aa9a9]">
+            <BriefcaseBusiness className="w-8 h-8 md:w-10 md:h-10 text-[#7aa9a9]" />
             Internships
           </h1>
-          <p className="text-[#1b1c21] bg-[#FFEB00] px-4 py-2 rounded-md text-lg">
+          <p className="text-[#7aa9a9] px-4 py-2 rounded-md text-lg">
             My internships have provided valuable hands-on experience and professional growth.
           </p>
         </div>
@@ -146,14 +146,14 @@ export const About = () => {
       {/* SKILLS SECTION */}
       <hr className="w-full h-1 bg-gray-400 my-12" />
       <div className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#FFEB00] flex justify-center items-center gap-3">
-          <img className="w-10 h-10" src={assets.Skill} alt="" /> SKILLS
+        <h1 className="text-4xl md:text-5xl font-bold text-[#7aa9a9] flex justify-center items-center gap-3">
+          <BrainCircuit className="w-10 h-10 text-[#7aa9a9]" alt="" /> SKILLS
         </h1>
-        <p className="text-lg bg-[#FFEB00] text-[#1b1c21] px-4 py-2 rounded-md mt-4">The Skills, Tools, and Technologies I Use</p>
+        <p className="text-lg text-[#7aa9a9] px-4 py-2 rounded-md mt-4">The Skills, Tools, and Technologies I Use</p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-5 mt-10">
-        {[assets.Javascript, assets.Node1, assets.Express, assets.React, assets.Mongo, assets.Tailwind, assets.Vscode, assets.Postman].map((skill, index) => (
+        {[assets.JavascriptCopy, assets.Node1, assets.Express, assets.React, assets.Mongo, assets.Tailwind, assets.Postman].map((skill, index) => (
           <img key={index} className="w-16 h-16 hover:shadow-xl rounded-full" src={skill} alt="skill" />
         ))}
       </div>

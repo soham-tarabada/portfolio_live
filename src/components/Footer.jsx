@@ -16,23 +16,23 @@ const Footer = () => {
           <div className="flex space-x-4 mt-3">
 
             <NavLink to="https://www.instagram.com/_soham9898?igsh=MTE2YzFwaXR4Z3Jjcw==" className="text-3xl hover:text-yellow-400">
-              <img className='w-10' src={assets.Instagram} alt="" />
+              <img className='w-10 ml-1.5' src={assets.Instagram} alt="" />
             </NavLink>
 
             <NavLink to="http://t.me/soham9898" className="text-3xl hover:text-yellow-400">
-            <img className='w-10' src={assets.Telegram} alt="" />
+            <img className='w-10 ml-1.5' src={assets.Telegram} alt="" />
             </NavLink>
 
             <NavLink to="https://github.com/210130107079" className="text-3xl hover:text-yellow-400">
-            <img className='w-10' src={assets.Github} alt="" />
+            <img className='w-10 ml-1.5' src={assets.Github} alt="" />
             </NavLink>
 
             <NavLink to="https://www.linkedin.com/in/soham-tarabada-51a50020b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-3xl hover:text-yellow-400">
-            <img className='w-10' src={assets.Linkedin} alt="" />
+            <img className='w-10 ml-1.5' src={assets.Linkedin} alt="" />
             </NavLink>
 
             <NavLink to="https://wa.me/918799535382" className="text-3xl hover:text-yellow-400">
-              <img className='w-10' src={assets.Whatsapp} alt="" />
+              <img className='w-10 ml-1.5 mr-1.5' src={assets.Whatsapp} alt="" />
             </NavLink>
 
           </div>
@@ -40,14 +40,14 @@ const Footer = () => {
 
         {/* Get in Touch Section */}
         <div className="mt-4 md:mt-0 md:text-right">
-          <div className="text-[#1c1b21 text-[20px] space-y-1 text-sm text-whi leading-6">
-            <a href='mailto:sohamtarabada2003@gmail.com' className='bg-[#FFEB00] px-3 py-2 rounded-sm sm:text-xs md:text-xs'>sohamtarabada2003@gmail.com</a>
+          <div className="text-[#1c1b21] mt-3 space-y-1 text-lg text-whi leading-6">
+            <a href='mailto:sohamtarabada2003@gmail.com' className='text-[#7aa9a9] px-3 py-2 rounded-sm sm:text-xs md:text-xs'>sohamtarabada2003@gmail.com</a>
           </div>
         </div>
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center text-white text-[12px] mt-4">
+      <div className="text-center text-white/70 text-[11px] mt-4">
         © Copyright 2025 @soham_9898.com - All Rights Reserved
       </div>
     </div>
