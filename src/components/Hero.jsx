@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="w-full md:w-1/2 space-y-4 sm:space-y-6 text-center md:text-left">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold">Hi, I Am <span className="text-[#7aa9a9]">Soham Tarabda</span></h1>
         <h2 className="text-xl sm:text-2xl md:text-2xl font-semibold">I'm A <span className="bg-[#7aa9a9] text-[#1c1b21] px-2 rounded">{text}</span></h2>
-        <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+        <p className="text-sm text-gray-300 sm:text-base md:text-lg leading-relaxed">
           Skilled Full Stack Developer with over six months of experience in 
           building scalable and high-performance web applications. Proficient 
           in MongoDB, Express.js, React.js, Tailwind CSS, and Node.js, with a 
@@ -51,7 +51,7 @@ const Hero = () => {
       {/* RIGHT ANIMATION */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         <Lottie 
-          className="w-48 sm:w-64 md:w-80 lg:w-96 hover:scale-110 transition-all duration-500 shadow-md" 
+          className="w-48 sm:w-64 md:w-80 lg:w-96 scale-90 hover:scale-125 transition-all duration-500" 
           animationData={One} 
           loop={true} 
         />

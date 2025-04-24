@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <nav className='bg-transparent mt-3 text-[18px] py-4 px-6 font-medium'>
             <div className='flex items-center justify-between'>
-                <div className='px-2 py-1 text-[25px] text-[#7aa9a9] font-bold rounded-sm'>
+                <div className='px-3 py-1 border-2 rounded-xl border-[#7aa9a9] text-[24px] text-[#7aa9a9] font-bold'>
                     Soham Tarabada
                 </div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                             navigate('/portfolio_live')
                             handleClick("home")
                         }}
-                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-300 px-2 py-1 rounded-sm ${click === "home" ? "underline underline-offset-4" : ""}`}
+                        className={`hover:bg-[#7aa9a9]  hover:text-[#1c1b21] transition-all duration-500 px-2 py-1 rounded-sm ${click === "home" ? "underline underline-offset-4" : ""}`}
                     >
                         Home
                     </motion.button>
@@ -46,7 +46,7 @@ const Navbar = () => {
                             navigate('/portfolio_live/about')
                             handleClick("about")
                         }}
-                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-300 px-2 py-1 rounded-sm ${click === "about" ? "underline underline-offset-4" : ""}`}
+                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-500 px-2 py-1 rounded-sm ${click === "about" ? "underline underline-offset-4" : ""}`}
                     >
                         About Me
                     </motion.button>
@@ -57,7 +57,7 @@ const Navbar = () => {
                             handleClick("projects")
                         }}
                         transition={{ type: "spring", stiffness: 300 }}
-                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-300 px-2 py-1 rounded-sm ${click === "projects" ? "underline underline-offset-4" : ""}`}
+                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-500 px-2 py-1 rounded-sm ${click === "projects" ? "underline underline-offset-4" : ""}`}
                     >
                         Projects
                     </motion.button>
@@ -68,7 +68,7 @@ const Navbar = () => {
                             navigate('/portfolio_live/resume')
                             handleClick("resume")
                         }}
-                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-300 px-2 py-1 rounded-sm ${click === "resume" ? "underline underline-offset-4" : ""}`}
+                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-500 px-2 py-1 rounded-sm ${click === "resume" ? "underline underline-offset-4" : ""}`}
                     >
                         Resume
                     </motion.button>
@@ -79,7 +79,7 @@ const Navbar = () => {
                             navigate('/portfolio_live/contact')
                             handleClick("contact")
                         }}
-                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-300 px-2 py-1 rounded-sm ${click === "contact" ? "underline underline-offset-4" : ""}`}
+                        className={`hover:bg-[#7aa9a9] hover:text-[#1c1b21] transition-all duration-500 px-2 py-1 rounded-sm ${click === "contact" ? "underline underline-offset-4" : ""}`}
                     >
                         Contact Me
                     </motion.button>

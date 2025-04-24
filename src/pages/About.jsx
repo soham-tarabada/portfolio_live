@@ -1,6 +1,6 @@
 import React from "react";
 import { GraduationCap, Calendar, Award, BrainCircuit, BriefcaseBusiness } from "lucide-react";
-import {assets} from '../assets/assets.js'
+import { assets } from '../assets/assets.js';
 
 const educationData = [
   {
@@ -67,36 +67,36 @@ const internshipData = [
 
 export const About = () => {
   return (
-    <div className="min-h-screen text-white py-16 px-4 md:px-8 lg:px-16">
+    <div className="min-h-screen text-white py-16 px-4 sm:px-6 md:px-8 lg:px-16">
       {/* EDUCATION SECTION */}
       <div className="max-w-5xl mx-auto mb-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 flex justify-center items-center gap-3 text-[#7aa9a9]">
-            <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-[#7aa9a9]" />
+          <h1 className="text-4xl font-bold mb-4 flex justify-center items-center gap-3 text-[#7aa9a9]">
+            <GraduationCap className="w-8 h-8 md:w-9 md:h-9 text-[#7aa9a9]" />
             Education
           </h1>
-          <p className="text-[#7aa9a9] px-4 py-2 rounded-md text-lg">
+          <p className="text-[#7aa9a9] px-4 py-2 rounded-md text-base">
             My education has been a journey of self-discovery, growth, and skill development.
           </p>
         </div>
 
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-12">
           {educationData.map((education, index) => (
-            <div key={index} className="flex flex-col md:flex-row items-center md:items-start">
+            <div key={index} className="flex flex-col md:flex-row border-2 border-white/70 p-4 rounded-2xl items-center md:items-start text-center md:text-left">
               <img
                 src={education.logo}
                 alt={education.institution}
                 className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover mb-4 md:mb-0"
               />
-              <div className="md:ml-6 text-center md:text-left">
+              <div className="md:ml-6">
                 <h3 className="text-xl font-semibold">{education.institution}</h3>
                 <p className="text-gray-400 text-sm">{education.location}</p>
                 <p className="text-blue-400 font-medium mt-2">{education.degree}</p>
-                <div className="flex items-center gap-2 text-gray-400 text-sm">
+                <div className="flex justify-center md:justify-start items-center gap-2 text-gray-400 text-sm">
                   <Calendar className="w-4 h-4" />
                   <span>{education.duration}</span>
                 </div>
-                <div className="flex items-center gap-2 text-white text-sm mt-1">
+                <div className="flex justify-center md:justify-start items-center gap-2 text-white text-sm mt-1">
                   <Award className="w-4 h-4" />
                   <span>{education.grade}</span>
                 </div>
@@ -111,28 +111,28 @@ export const About = () => {
       <hr className="w-full h-1 bg-gray-400 my-12" />
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 flex justify-center items-center gap-3 text-[#7aa9a9]">
-            <BriefcaseBusiness className="w-8 h-8 md:w-10 md:h-10 text-[#7aa9a9]" />
+          <h1 className="text-4xl font-bold mb-4 flex justify-center items-center gap-3 text-[#7aa9a9]">
+            <BriefcaseBusiness className="w-8 h-8 md:w-9 md:h-9 text-[#7aa9a9]" />
             Internships
           </h1>
-          <p className="text-[#7aa9a9] px-4 py-2 rounded-md text-lg">
+          <p className="text-[#7aa9a9] px-4 py-2 rounded-md text-base">
             My internships have provided valuable hands-on experience and professional growth.
           </p>
         </div>
 
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-12">
           {internshipData.map((internship, index) => (
-            <div key={index} className="flex flex-col md:flex-row items-center md:items-start">
+            <div key={index} className="flex flex-col md:flex-row border-2 border-white/70 p-4 rounded-2xl items-center md:items-start text-center md:text-left">
               <img
                 src={internship.logo}
                 alt={internship.institution}
                 className="w-16 h-16 md:w-20 md:h-20 rounded-lg object-cover mb-4 md:mb-0"
               />
-              <div className="md:ml-6 text-center md:text-left">
+              <div className="md:ml-6">
                 <h3 className="text-xl font-semibold">{internship.institution}</h3>
                 <p className="text-gray-400 text-sm">{internship.location}</p>
                 <p className="text-blue-400 font-medium mt-2">{internship.degree}</p>
-                <div className="flex items-center gap-2 text-gray-400 text-sm">
+                <div className="flex justify-center md:justify-start items-center gap-2 text-gray-400 text-sm">
                   <Calendar className="w-4 h-4" />
                   <span>{internship.duration}</span>
                 </div>
@@ -146,10 +146,10 @@ export const About = () => {
       {/* SKILLS SECTION */}
       <hr className="w-full h-1 bg-gray-400 my-12" />
       <div className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#7aa9a9] flex justify-center items-center gap-3">
-          <BrainCircuit className="w-10 h-10 text-[#7aa9a9]" alt="" /> SKILLS
+        <h1 className="text-4xl font-bold text-[#7aa9a9] flex justify-center items-center gap-3">
+          <BrainCircuit className="w-9 h-9 text-[#7aa9a9]" /> SKILLS
         </h1>
-        <p className="text-lg text-[#7aa9a9] px-4 py-2 rounded-md mt-4">The Skills, Tools, and Technologies I Use</p>
+        <p className="text-base text-[#7aa9a9] px-4 py-2 rounded-md mt-4">The Skills, Tools, and Technologies I Use</p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-5 mt-10">

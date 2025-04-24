@@ -47,8 +47,8 @@ const Contact = () => {
         <Lottie className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg" animationData={ContactLogo} loop={true} />
 
         <div className="flex flex-col items-center w-full max-w-lg gap-5">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#7aa9a9] font-bold text-center mt-5 flex items-center">
-            <MailsIcon className="w-10 h-10 sm:w-12 sm:h-12 mr-3" src={assets.Mail} alt="" />
+          <h1 className="text-3xl sm:text-4xl md:text-4xl text-[#7aa9a9] font-bold text-center mt-5 flex items-center">
+            <MailsIcon className="w-10 h-10 sm:w-11 sm:h-11 mr-3" src={assets.Mail} alt="" />
             Contact Me
           </h1>
           <hr className="opacity-0" />
@@ -58,7 +58,7 @@ const Contact = () => {
             <input 
               onChange={(e) => setName(e.target.value)} 
               value={name} 
-              className="w-full px-4 py-2 text-[#7aa9a9] rounded-md bg-[#2e3038] focus:outline-none focus:ring-2 focus:ring-blue-200" 
+              className="w-full px-4 py-2 text-[#7aa9a9] rounded-md bg-[#2e3038] focus:outline-none focus:ring-2 focus:ring-[#77a7a7]" 
               type="text" 
               placeholder="name..." 
               required
@@ -68,7 +68,7 @@ const Contact = () => {
             <input 
               onChange={(e) => setEmail(e.target.value)} 
               value={email} 
-              className="w-full px-4 py-2 text-[#7aa9a9] rounded-md bg-[#2e3038] focus:outline-none focus:ring-2 focus:ring-blue-200" 
+              className="w-full px-4 py-2 text-[#7aa9a9] rounded-md bg-[#2e3038] focus:outline-none focus:ring-2 focus:ring-[#77a7a7]" 
               type="email" 
               placeholder="email..." 
               required
@@ -78,14 +78,14 @@ const Contact = () => {
             <textarea 
               onChange={(e) => setMessage(e.target.value)} 
               value={message} 
-              className="w-full h-[150px] px-4 py-2 text-[#7aa9a9] rounded-md bg-[#2e3038] focus:outline-none focus:ring-2 focus:ring-blue-200" 
+              className="w-full h-[150px] px-4 py-2 text-[#7aa9a9] rounded-md bg-[#2e3038] focus:outline-none focus:ring-2 focus:ring-[#77a7a7]" 
               placeholder="message..."
               required
             />
 
             <div className="flex justify-center">
               <button 
-                className="text-[#7aa9a9] transition-all duration-300 hover:scale-110 hover:text-[#1b1c21] hover:bg-[#7aa9a9] mt-4 w-32 text-xl rounded-md px-4 py-2 border border-[#7aa9a9] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="text-[#7aa9a9] transition-all duration-500 hover:text-[#1b1c21] hover:bg-[#7aa9a9] mt-4 w-32 text-xl rounded-md px-4 py-2 border border-[#7aa9a9] disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={loading}
               >
                 {loading ? "Sending..." : "SEND"}
