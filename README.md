@@ -3,7 +3,7 @@
 This repository contains the frontend of a personal portfolio website built using **React** and **Vite**. The website showcases projects, skills, education, and contact information in an interactive and visually appealing manner. It leverages modern web development tools and libraries, including **Tailwind CSS** for styling and **React Router** for navigation.
 
 You can access the live version of this project at:  
-[Live Portfolio Website Link](https://210130107079.github.io/portfolio_live/)
+[Live Portfolio Website Link](https://soham-tarabada.github.io/portfolio_live/)
 
 ## Features
 
