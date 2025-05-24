@@ -30,7 +30,7 @@ const educationData = [
     duration: "Sept 2021 - Present...",
     grade: "7.67 CGPA",
     description: "Currently maintaining a 7.83 CGPA in my BE program at GEC Gandhinagar. Committed to furthering my education and honing my technical skills",
-    logo: "https://gecg28.ac.in/img/GECG_logo.png",
+    logo: "http://www.gecg28.ac.in/img/GECG_logo.png",
     position: "left",
   },
 ];
