@@ -23,7 +23,7 @@ const Footer = () => {
             <img className='w-10 ml-1.5' src={assets.Telegram} alt="" />
             </NavLink>
 
-            <NavLink to="https://github.com/210130107079" className="text-3xl hover:text-yellow-400">
+            <NavLink to="https://github.com/soham-tarabada" className="text-3xl hover:text-yellow-400">
             <img className='w-10 ml-1.5' src={assets.Github} alt="" />
             </NavLink>
 
